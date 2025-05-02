@@ -1,22 +1,23 @@
 Email Reply Generator
-Overview
-The Email Reply Generator is a web-based application designed to automate the generation of professional email replies using AI. It integrates a Spring Boot backend with the Gemini API for natural language processing, a React frontend for a user-friendly interface, and a Chrome extension for seamless Gmail integration. The project aims to save time for users by generating contextually appropriate email responses based on input email content and desired tone.
-Features
 
-AI-Powered Reply Generation: Generate email replies using the Gemini API with customizable tones (e.g., professional, casual).
-Gmail Integration: A Chrome extension allows users to generate and inject replies directly in Gmail.
-User-Friendly Interface: A standalone React web app for reply generation with tone selection.
-Fast and Scalable Backend: Built with Spring Boot, ensuring response times under 2 seconds.
+📖 Overview
+The Email Reply Generator is a web-based application that automates the creation of professional email replies using AI. It features a Spring Boot backend with Gemini API integration for natural language processing, a React frontend for a user-friendly interface, and a Chrome extension for seamless Gmail integration. This project helps users save time by generating contextually appropriate email responses based on input content and desired tone.
+✨ Features
+
+AI-Powered Replies: Generate email replies with customizable tones (e.g., professional, casual) using the Gemini API.
+Gmail Integration: Chrome extension to generate and inject replies directly in Gmail.
+User-Friendly UI: Standalone React app for reply generation with tone selection.
+Fast Backend: Spring Boot ensures response times under 2 seconds.
 Responsive Design: Styled with Material-UI and Tailwind CSS for cross-browser compatibility.
 
-Technology Stack
+🛠️ Technology Stack
 
 Frontend: React, Material-UI, Tailwind CSS, Chrome Extension API
 Backend: Spring Boot, Java, WebClient, Jackson
 AI: Gemini API
-Development Tools: Maven, Vite, npm
+Tools: Maven, Vite, npm
 
-Installation
+🚀 Installation
 Prerequisites
 
 Node.js and npm (for React frontend)
@@ -39,11 +40,11 @@ Navigate to the backend directory:cd backend
 Configure the Gemini API key in application.properties:gemini.api.key=your-api-key-here
 
 
-Build and run the Spring Boot application:mvn clean install
+Build and run the backend:mvn clean install
 mvn spring-boot:run
 
 
-The backend will run on http://localhost:8080.
+The backend runs on http://localhost:8080.
 
 
 Frontend Setup (React):
@@ -51,11 +52,11 @@ Frontend Setup (React):
 Navigate to the frontend directory:cd frontend
 
 
-Install dependencies and start the React app:npm install
+Install dependencies and start the app:npm install
 npm run dev
 
 
-The frontend will run on http://localhost:5173 (or the port specified by Vite).
+The frontend runs on http://localhost:5173 (or the port specified by Vite).
 
 
 Chrome Extension Setup:
@@ -69,29 +70,25 @@ Enable "Developer mode" (top right).
 Click "Load unpacked" and select the chrome-extension folder.
 
 
-The extension will appear in Gmail, adding an "AI Reply" button.
+The extension will add an "AI Reply" button in Gmail.
 
 
 
-Usage
-
-Standalone Web App:
+📋 Usage
+Standalone Web App
 
 Open the React app at http://localhost:5173.
 Input the email content and select a tone (e.g., professional, casual).
 Click "Generate Reply" to view the AI-generated response.
 Copy the reply to use in your email client.
 
-
-Gmail Integration:
+Gmail Integration
 
 Open Gmail in Chrome with the extension installed.
-While composing or replying to an email, click the "AI Reply" button (added by the extension).
-Input the desired tone, and the extension will fetch a reply from the backend and inject it into the email draft.
+While composing or replying to an email, click the "AI Reply" button.
+Select the desired tone, and the extension will fetch and inject the reply into your email draft.
 
-
-
-Project Structure
+📂 Project Structure
 
 backend/: Spring Boot application with REST API and Gemini API integration.
 frontend/: React web app for standalone reply generation.
@@ -100,20 +97,21 @@ docs/: Project report and diagrams (DFD, architecture diagram).
 
 
 
-Screenshots
+📸 Screenshots
 
-React UI: (To be added - placeholder for UI.png)  
-Gmail Integration: (To be added - placeholder for Email Integrated.png)
-
-Future Scope
-
-Add support for multiple languages in reply generation.
-Integrate with other email clients (e.g., Outlook).
-Enable offline reply generation capabilities.
+![Screenshot 2025-05-02 144109](https://github.com/user-attachments/assets/39764df2-a926-4e1a-85fa-543140ac4262)
 
 
+![Screenshot 2025-05-02 144511](https://github.com/user-attachments/assets/8afccc17-1a81-4303-817c-29b55a32de96)
 
-Contributing
-Contributions are welcome! Please fork the repository, create a branch, and submit a pull request with your changes. Ensure to follow the coding standards and include tests where applicable.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+🔮 Future Scope
+
+Support for multiple languages in reply generation.
+Integration with other email clients (e.g., Outlook).
+Offline reply generation capabilities.
+
+
+
+🤝 Contributing
+Contributions are welcome! Fork the repository, create a branch, and submit a pull request with your changes. Please follow the coding standards and include tests where applicable.
+
